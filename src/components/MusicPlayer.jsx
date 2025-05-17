@@ -1,3 +1,11 @@
+import CoverArt from "./CoverArt";
+import SongTitle from "./SongTitle";
+
 export default function MusicPlayer() {
-  return <p>Music player goes here</p>;
+  return(
+    <div>
+      <CoverArt />
+      <SongTitle />
+    </div>
+  );
 }
