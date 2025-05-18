@@ -5,7 +5,7 @@ import VolumeControls from "./VolumeControls";
 
 export default function MusicPlayer() {
   return(
-    <div>
+    <div className="">
       <CoverArt />
       <SongTitle />
       <PlayControls />
