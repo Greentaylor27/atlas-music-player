@@ -21,7 +21,7 @@ export default function PlayListItem() {
   if (!playlist) return <p>No playlist found.</p>;
 
   return (
-  <div>
+  <div className="h-11">
     <h1>Playlist</h1>
     <ul>
       {playlist.map((item, index) => (
