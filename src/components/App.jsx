@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1 p-8 flex">
-        <MusicPlayer />
+        { /* <MusicPlayer /> */ }
         <PlayListItem />
       </main>
-      <Footer />
+      { /* <Footer /> */ }
     </div>
   );
 }
