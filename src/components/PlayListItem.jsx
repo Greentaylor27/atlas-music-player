@@ -28,16 +28,16 @@ export default function PlayListItem() {
   if (!playlist) return <p>No playlist found.</p>;
 
   return (
-  <div className="">
-    <h1 className="font-bold text-lg">Playlist</h1>
+  <div className="w-full px-4">
+    <h1 className="font-bold text-lg mb-4">Playlist</h1>
     <ul>
       {playlist.map((item, index) => (
-        <li key={index} className="flex items-center py-3 w-full">
-          <div className="flex-1 flex flex-col">
-            <p className="text-base">{item.title}</p>
+        <li key={index} className="flex items-center justify-between py-3 w-full">
+          <div className="flex-1 min-w-0">
+            <p className="text-base font-medium">{item.title}</p>
             <p className="text-sm text-gray-500">{item.artist}</p>
           </div>
-          <p className="text-sm text-gray-600 w-20">{formatDuration(item.duration)}</p>
+          <p className="text-sm text-gray-400 text-right w-16 shrink-0">{formatDuration(item.duration)}</p>
          </li>
         ))}
     </ul>
