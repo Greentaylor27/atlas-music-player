@@ -10,7 +10,7 @@ export default function VolumeControls() {
     };
 
   return (
-    <div className="flex items-center w-full max-w-sm">
+    <div className="flex items-center w-full max-w-sm pt-2">
       <img src={volumeIcon} alt="Volume Icon" className="w-5 h-5" />
       <img
         src={slider}

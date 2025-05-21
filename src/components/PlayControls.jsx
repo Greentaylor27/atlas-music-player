@@ -7,7 +7,7 @@ import skip from "../assets/SkipIcon.svg"
 export default function PlayControls() {
     return(
         <div className="flex flex-row justify-between max-w-xl">
-            <p className="flex items-center">1x</p>
+            <p className="flex items-center text-lg">1x</p>
             <button>
                 <img src={back} alt="Back Button" />
             </button>
