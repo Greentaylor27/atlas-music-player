@@ -5,7 +5,7 @@ import PlayControls from "./PlayControls";
 
 export default function CurrentlyPlaying() {
   return (
-    <div>
+    <div className="">
       <CoverArt />
       <SongTitle />
       <PlayControls />

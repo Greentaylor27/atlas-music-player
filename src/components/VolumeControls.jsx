@@ -15,7 +15,7 @@ export default function VolumeControls() {
       <img
         src={slider}
         alt="Volume Slider"
-        className="w-full h-3 object-contain -ml-10 rounded-full"
+        className="w-full h-3 object-contain rounded-full"
       />
     </div>
   )
