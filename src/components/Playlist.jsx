@@ -30,7 +30,7 @@ export default function Playlist() {
 
 
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-4 bg-fist1-200 rounded-lg pb-14 pt-8 bg-contain h-full ">
         <h1 className="font-bold text-lg mb-4">Playlist</h1>
         <ul>
           {playlist.map((item) => (

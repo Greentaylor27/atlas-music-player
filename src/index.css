@@ -1,7 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-midnight: #121063;
-  --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca;
+  /* Named after the Crimson Fist from Warhammer 40k */
+  --color-fist1-50: #e9f9ff;
+  --color-fist1-100: #cef1ff;
+  --color-fist1-200: #a7e8ff;
+  --color-fist1-300: #6bddff;
+  --color-fist1-400: #26c6ff;
+  --color-fist1-500: #003eff;
+  --color-fist1-600: #0074ff;
+  --color-fist1-700: #0059ff;
+  --color-fist1-800: #004ce6;
+  --color-fist1-900: #0046b3;
+  --color-fist1-950: #002151;
+
+  --color-fist2-50: #fff1f1;
+  --color-fist2-100: #ffe0e1;
+  --color-fist2-200: #ffc6c8;
+  --color-fist2-300: #ff9fa2;
+  --color-fist2-400: #ff676b;
+  --color-fist2-500: #fb383e;
+  --color-fist2-600: #e9191f;
+  --color-fist2-700: #c41116;
+  --color-fist2-800: #9a1115;
+  --color-fist2-900: #861619;
+  --color-fist2-950: #490608;
 }
