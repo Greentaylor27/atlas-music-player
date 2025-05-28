@@ -9,11 +9,13 @@ export default function CoverArt({ songId }: CoverArtProps) {
     const [cover, setCover] = useState(null);
 
     useEffect(() => {
+        console.log("inside useEffect - songId is:", songId);
         if (!songId) return;
 
         fetch(`api/v1/songs/${songId}`)
           .then((res) => res.json())
           .then((data) => {
+            console.log("Song data:", data);
             setCover(data.cover);
           })
           .catch((err) => console.error('Error fetching cover art:', err));
