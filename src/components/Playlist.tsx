@@ -6,6 +6,7 @@ export type Song = {
   artist: string;
   duration: number;
   cover: string;
+  song: string;
 };
 
 type PlaylistProps = {
@@ -23,7 +24,7 @@ function formatDuration(seconds: number): string {
 
 export default function Playlist({ playlist, onSelectSong, currentSongId }: PlaylistProps) {
   return (
-    <div className="w-full px-4 bg-fist1-200 rounded-lg pb-14 pt-8 bg-contain h-full ">
+    <div className="w-max px-4 bg-fist1-200 rounded-lg pb-14 pt-8 bg-contain h-full ">
         <h1 className="font-bold text-lg mb-4">Playlist</h1>
         <ul>
           {playlist.map((item) => (
