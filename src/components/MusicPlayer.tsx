@@ -74,7 +74,7 @@ export default function MusicPlayer() {
   if (!playlist || playlist.length === 0) return <p>No songs found.</p>;
 
   return(
-      <>
+      <div>
         <AudioPlayer
           song={currentSongData}
           isPlaying={isPlaying}
@@ -82,7 +82,7 @@ export default function MusicPlayer() {
           playbackRate={speedIndex === 0 ? 0.5 : speedIndex === 1 ? 1 : 2}
           onEnded={handleForward}
         />
-        <div className="flex flex-col md:flex-row gap-8 p-4 mx-auto h-full w-full">
+        <div className="flex flex-col md:flex-row gap-8 p-4 mx-auto h-full w-full min-w-fill">
           <div className="flex-1">
             <CurrentlyPlaying
               song={currentSong}
@@ -108,6 +108,6 @@ export default function MusicPlayer() {
             />
           </div>
         </div>
-      </>
+      </div>
   );
 }
