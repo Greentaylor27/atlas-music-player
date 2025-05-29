@@ -1,10 +1,11 @@
 import PlayListItem from "./PlayListItem";
 
-type Song = {
+export type Song = {
   id: string;
   title: string;
   artist: string;
   duration: number;
+  cover: string;
 };
 
 type PlaylistProps = {
