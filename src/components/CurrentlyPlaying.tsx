@@ -16,6 +16,8 @@ type CurrentlyPlayingProps = {
   setIsPlaying: (value: boolean) => void;
   speedIndex: number;
   setSpeedIndex: (index: number) => void;
+  volume: number;
+  setVolume: (value: number) => void;
 };
 
 export default function CurrentlyPlaying({ song,
@@ -28,7 +30,9 @@ export default function CurrentlyPlaying({ song,
   isPlaying,
   setIsPlaying,
   speedIndex,
-  setSpeedIndex }: CurrentlyPlayingProps) {
+  setSpeedIndex,
+  volume,
+  setVolume }: CurrentlyPlayingProps) {
   
     if (!song) return null;
 
@@ -46,7 +50,7 @@ export default function CurrentlyPlaying({ song,
         setIsPlaying={setIsPlaying}
         speedIndex={speedIndex}
         setSpeedIndex={setSpeedIndex} />
-      <VolumeControls />
+      <VolumeControls volume={volume} onVolumeChange={setVolume} />
     </div>
     )
 }

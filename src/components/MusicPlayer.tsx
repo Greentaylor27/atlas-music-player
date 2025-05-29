@@ -96,6 +96,8 @@ export default function MusicPlayer() {
               setIsPlaying={setIsPlaying}
               speedIndex={speedIndex}
               setSpeedIndex={setSpeedIndex}
+              volume={volume}
+              setVolume={setVolume}
             />
           </div>
           <div className="flex-1">

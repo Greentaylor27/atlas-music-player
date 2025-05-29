@@ -1,11 +1,13 @@
 import volumeIcon from "../assets/VolumeIcon.svg";
-import React, { useState } from "react";
 
-export default function VolumeControls() {
-    const [volume, setVolume] = useState(0);
+type VolumeControlsProps = {
+    volume: number;
+    onVolumeChange: (value: number) => void;
+}
 
+export default function VolumeControls({ volume, onVolumeChange }: VolumeControlsProps) {
     const handleVolumeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setVolume(Number(event.target.value));
+        onVolumeChange(Number(event.target.value));
     };
 
     return (
@@ -14,7 +16,8 @@ export default function VolumeControls() {
             <input
                 type="range"
                 min="0"
-                max="100"
+                max="1"
+                step="0.01"
                 value={volume}
                 onChange={handleVolumeChange}
                 className="w-full max-w-full h-3 rounded-full border border-gray-500 bg-white accent-gray-500 cursor-pointer appearance-none"
